@@ -5,7 +5,7 @@
 {% block content %}
 <h1>Sync Profile</h1>
 
-<p>You are logged in as <code>{{ user.nickname }}</code> 
+<p>You are logged in as <code>{{ user.nickname }}</code>
     (<a href="{{ logout_url }}">logout</a>).</p>
 
 {% if not profile %}
@@ -15,7 +15,7 @@
         <input type="hidden" name="action" value="create_profile" />
         <input type="submit" value="Create a new sync profile, please." /></p>
     </form>
-    
+
 {% else %}
 
     <p>Use these custom server details to set up Firefox Sync:</p>
